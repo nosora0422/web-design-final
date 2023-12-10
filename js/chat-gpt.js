@@ -1,4 +1,4 @@
-const apiKey = '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';
+// const apiKey = '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';
 const submitBtn = document.querySelector('#submit');
 const outputContent = document.querySelector('#output');
 const inputContent = document.querySelector('input');
