@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/output.css">
     <script src="https://kit.fontawesome.com/1a72bf9d1c.js" crossorigin="anonymous"></script>
     <title>Home</title>
     
 </head>
 <body>
     <header>
-        <nav class="bg-primary">
+        <nav class="bg-[#243c5a]">
             <div class="nav-wrapper">
                 <div class="logo">COMPANY NAME</div>
                 <ul>
@@ -26,23 +27,42 @@
     <div class="container main-page-container">
         <h1 class="main-h1">Lorem ipsum dolor sit amet</h1>
         <div class="grid main-page-card">
-            <div class="col-12 col-4-lg main-card-item">Need someone to talk right now?</div>
-            <div class="col-12 col-4-lg main-card-item"></div>
-            <div class="col-12 col-4-lg main-card-item chat">
-                <h2>Talk to me if you need my help!</h2>
-                <div class="chatBot">
-                    <p id="output">Hello!</p>
-                </div>
-                <div class="input-container">
-                    <input type="text"/>
-                    <div id="submit"><i class="fa-solid fa-paper-plane fa-xs"></i></div>
-                </div>
-                <button id="new-chat">New Chat</button>
-                <div class="history"></div>
+            <div class="col-12 col-4-lg main-card-item main-card-img1">
+                <h4 class="lable">Find Help</h4>
+                <p>I need financial help.</p>
+                <svg class="arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.31 66.26"><path style="fill:none;stroke-linejoin:round" d="M0 33.31h123.81L93.2.34"/><path style="stroke-miterlimit:10;fill:none" d="m93.2 65.92 30.61-32.61"/></svg>
             </div>
-            
+            <div class="col-12 col-4-lg main-card-item main-card-img2">
+                <h4 class="lable">Find Resources</h4>
+                <p>I want more infomation about mental health.</p>
+                <svg class="arrow"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.31 66.26"><path style="fill:none;stroke-linejoin:round" d="M0 33.31h123.81L93.2.34"/><path style="stroke-miterlimit:10;fill:none" d="m93.2 65.92 30.61-32.61"/></svg>
+            </div>
+                
+            <div class="col-12 col-4-lg  chat-card-container main-card-img3">
+                <div class="main-card-item">
+                    <h4 class="lable">Virtual Support</h4>
+                    <p>I need to talk to someone.</p>
+                    <svg class="arrow" id="chat-btn" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.31 66.26"><path style="fill:none;stroke-linejoin:round" d="M0 33.31h123.81L93.2.34"/><path style="stroke-miterlimit:10;fill:none" d="m93.2 65.92 30.61-32.61"/></svg>
+                </div>
+                <div class="chat-card-item">
+                    <h2>Talk to me if you need my help!</h2>
+                    <div class="chatBot">
+                        <p id="output">Hello!</p>
+                    </div>
+                    <div class="input-container">
+                        <input type="text"/>
+                        <div id="submit"><i class="fa-solid fa-paper-plane fa-s"></i></div>
+                    </div>
+                    <div class="btn-box">
+                        <button class="new-chat" id="new-chat">New Chat</button>
+                        <button class="cancel">Cancel</button>
+                    </div>
+                    <div class="history"></div>
+                </div>
+            </div>
         </div>
     </div>
+    <p class="text-blue-800">Hello</p>
     <!-- <footer>
         <div class="grid grid-no footer-wrapper">
             <div class="col-4-lg company-contact-wrapper">

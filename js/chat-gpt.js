@@ -1,4 +1,4 @@
-const apiKey = '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';
+const apiKey = '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';
 const submitBtn = document.querySelector('#submit');
 const outputContent = document.querySelector('#output');
 const inputContent = document.querySelector('input');
@@ -23,10 +23,10 @@ async function getMessage() {
                 messages: [
                   {
                     role: "system",
-                    content: "The topic is mental health." + inputContent.value
+                    content: "The topic is mental health. Can you reply with in maximum 5sentences?" + inputContent.value
                   }
                 ],
-                max_tokens: 100
+                max_tokens: 300
         })
     }
     try{
@@ -37,7 +37,13 @@ async function getMessage() {
             const pElement = document.createElement('p');
             pElement.textContent = inputContent.value;
             pElement.addEventListener('click', () => changeInput(pElement.textContent));
-            historyEl.append(pElement);
+            pElement.classList.add('hstr-item','card-item');
+            historyEl.appendChild(pElement);
+
+            msnry.destroy();
+            msnry = new Masonry(container,{
+            itemSelector: '.card-item',
+            });
         }
     } catch(error){
         console.error(error);
@@ -53,3 +59,26 @@ function clearInput(){
 }
 
 newChatbtn.addEventListener('click', clearInput);
+
+// var arrow = document.querySelector('#chat-btn');
+// var chatBox = document.querySelector('#chat-card-item');
+// var chatTitle = document.querySelector('#chat-title');
+// var cancBtn = document.querySelector('.cancel')
+
+// arrow.addEventListener('click', moveBox);
+// cancBtn.addEventListener('click', reverseMove);
+
+
+// function moveBox(){
+//     chatBox.style.transform = 'translateX(-1rem)';
+//     chatBox.style.transition = 'transform 1s ease-in-out';
+//     chatTitle.style.transition = 'transform 1s ease-in-out';
+//     chatTitle.style.transform = 'translateX(-110%)';
+// }
+
+// function reverseMove(){
+//     chatBox.style.transform = ''; 
+//     chatBox.style.transition = 'transform 1s ease-in-out';
+//     chatTitle.style.transition = 'transform 1s ease-in-out';
+//     chatTitle.style.transform = ''; 
+// }

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-5xl;
+        @apply pb-10;
+        @apply font-medium;
+        @apply leading-10;
+    }
+    h2{
+        @apply text-xl;
+        @apply py-2;
+        @apply font-medium;
+        @apply leading-5;
+    }
+    h3{
+        @apply text-lg pb-2 font-medium leading-6
+    }
+    a{
+        @apply inline-block no-underline -text--font-color;
+    }
+    a:hover{
+        @apply inline-block font-medium no-underline -text--font-color;
+    }
+    button{
+        @apply -text--font-color text-base px-8 rounded border-0 bg-primary--color; 
+    }
+}
+
+@layer components {
+    .hstr-item{
+        @apply w-72 p-4 mr-4 mb-4 rounded-md font-semibold bg-secondary-color text-white;
+    }
+    .arrow{
+        @apply w-28 stroke-primary--color ml-auto mt-auto cursor-pointer;
+    }
+    .card-button{
+        @apply bg-secondary-color text-body-font-color w-full mt-6 py-2 px-6 text-lg rounded-sm text-center;
+    }
+    .card-button:hover{
+        @apply bg-gray-400;
+    }
+    .my-grid {
+        @apply grid grid-cols-12 gap-4;
+    }
+    
+  }
+

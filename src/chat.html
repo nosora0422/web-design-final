@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://kit.fontawesome.com/1a72bf9d1c.js" crossorigin="anonymous"></script>
+    <title>Virtual Support</title>
+</head>
+<body class="bg-backgroud-color">
+    <header>
+        <nav class="w-full">
+            <div class="container flex justify-between my-0 mx-auto py-8 px-4 nav-wrapper">
+                <a href="../src/index.html"><div class="logo">COMPANY NAME</div></a>
+                <ul class="w-400 flex">
+                    <li><a class="inline-block py-0 px-5" href="../src/find-help.html">Find Help</a></li>
+                    <li><a class="inline-block py-0 px-5" href="../src/resource.html">Find Resources</a></li>
+                    <li><a class="inline-block py-0 px-5" href="../src/help-us.html">Help Us</a></li>
+                    <li><a class="inline-block py-0 px-5" href="../src/chat.html">Virtual Support</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container m-auto px-4">
+        <div class="w-full h-30v rounded-lg bg-virtual-support bg-center bg-cover flex flex-col justify-end items-start pb-7 px-6">
+            <h3 class="text-white py-1 px-4 mb-4 border border-primary--color border-solid">Virtual Support</h3>
+            <h1 class="text-white">Talk to our virtual support</h1>
+        </div>
+        <div class="mt-6">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <div class="chat-dft-item border border-solid border-secondary-color rounded-sm -text--font-color font-medium py-2 px-6 block hover:bg-primary--color hover:-translate-x-1 hover:-translate-y-1 duration-300 cursor-pointer">What are some effective strategies for managing stress in everyday life?</div>
+                <div class="chat-dft-item border border-solid border-secondary-color -text--font-color font-medium   py-2 px-6 block hover:bg-primary--color hover:-translate-x-1 hover:-translate-y-1 duration-300 cursor-pointer">How can I support a friend or family member experiencing mental health challenges?</div>
+                <div class="chat-dft-item border border-solid border-secondary-color -text--font-color font-medium  py-2 px-6 bloc khover:bg-primary--color hover:-translate-x-1 hover:-translate-y-1 duration-300 cursor-pointer">What are the signs and symptoms of anxiety and ways to cope with them?</div>
+                <div class="chat-dft-item border border-solid border-secondary-color -text--font-color font-medium py-2 px-6 block hover:bg-primary--color hover:-translate-x-1 hover:-translate-y-1 duration-300 cursor-pointer">How does therapy or counseling help in improving mental health?</div>
+                <div class="chat-dft-item border border-solid border-secondary-color -text--font-color font-medium py-2 px-6 block hover:bg-primary--color hover:-translate-x-1 hover:-translate-y-1 duration-300 cursor-pointer">What are self-care practices and their importance in maintaining good mental health?</div>
+            </div>
+            <div class="">
+                <div class="border border-solid border-secondary-color rounded-md flex flex-col justify-end w-full h-50v p-4" id="chat-card-item">
+                    <div class="w-full h-full p-4 overflow-y-auto  bg-primary--color/70 rounded">
+                        <p class="inline-block max-w-2xl font-normal py-2 px-4 rounded -text--font-color bg-white/100" id="output">Hello!</p>
+                    </div>
+                    <div class="grid grid-cols-12 mt-4">
+                        <input class="lg:col-span-9 col-span-12 h-10 border border-solid border-secondary-color rounded bg-primary--color/50 text-base font-medium w-full px-2 text-body-font-color" type="text" placeholder="Please enter message"/>
+                        <div class="lg:col-span-3 col-span-12 grid grid-cols-2 h-10">
+                            <button class="grid-cols-1 box-border flex justify-center items-center -text--font-color font-medium rounded bg-secondary-color hover:bg-gray-400/70 cursor-pointer" id="submit">Send<i class="fa-solid fa-paper-plane fa-s ms-2"></i></button>
+                            <button class="grid-cols-1 hover:bg-gray-400/70 new-chat" id="new-chat">New Chat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto mt-4 px-4">
+        <div class="history" id="page-container">
+            <p class="hstr-item card-item h-32 bg-stone-500">YOUR CHAT HISTORY</p>
+        </div>
+    </div>
+    <footer class="w-full">
+        <div class="my-grid gap-0 w-full">
+            <div class="col-span-12 lg:col-span-4 h-full bg-secondary-color">
+                <div class="flex flex-col items-center lg:items-end -text--font-color py-4 pr-12 pl-9">
+                    <div class="logo p-8">COMPANY NAME</div>
+                    <div class="py-9 px-0">
+                        <ul class="mb-5">
+                            <li class="p-2">#105 1234 Main St Vancouver BC V0E 0E0</li>
+                            <li class="p-2">company@gmail.com</li>
+                            <li class="p-2">+1 778-123-1234</li>
+                        </ul>
+                        <hr class="border border-solid -border--font-color">
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-8 flex flex-col items-center w-full p-4 bg-primary--color order-first lg:order-1 lg:items-start">
+                <ul>
+                    <li><a class="block py-4 px-9" href="#">Mental Health Specialist</a></li>
+                    <li><a class="block py-4 px-9" href="#">Community</a></li>
+                    <li><a class="block py-4 px-9" href="#">Financial Support</a></li>
+                    <li><a class="block py-4 px-9" href="#">Help Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/chat-gpt.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/myscripts.js"></script>
+</body>
+</html>
