@@ -10,6 +10,7 @@ module.exports = {
         'primary-op': 'rgba(239 234 223, 0.3)',
         'body-font-color': '#242424',
         'secondary-color': '#CBC2B8',
+        'green-card':'rgba(180, 189, 178, 0.8);'
       },
       height: {
 				"10v": "10vh",
@@ -18,6 +19,7 @@ module.exports = {
 				"40v": "40vh",
 				"50v": "50vh",
 				"60v": "60vh",
+        "65v": "65vh",
 				"70v": "70vh",
 				"80v": "80vh",
 				"90v": "90vh",

@@ -668,16 +668,24 @@ button {
   gap: 1rem;
 }
 
-.fixed {
-  position: fixed;
+.invisible {
+  visibility: hidden;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .relative {
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
+.right-0 {
+  right: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .order-first {
@@ -704,6 +712,11 @@ button {
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-5 {
@@ -748,6 +761,10 @@ button {
   margin-top: 1.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -772,6 +789,10 @@ button {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -780,8 +801,8 @@ button {
   height: 2.5rem;
 }
 
-.h-100v {
-  height: 100vh;
+.h-20v {
+  height: 20vh;
 }
 
 .h-30v {
@@ -850,6 +871,10 @@ button {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -985,6 +1010,10 @@ button {
   background-color: rgb(255 255 255 / 1);
 }
 
+.bg-green-card {
+  background-color: rgba(180, 189, 178, 0.8);;
+}
+
 .bg-find-help {
   background-image: linear-gradient(rgba(42, 42, 42, 0.5), rgba(0, 0, 0, 0.5)),url('../img/find-help.jpg');;
 }
@@ -1042,6 +1071,11 @@ button {
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-2 {
@@ -1223,6 +1257,16 @@ button {
   stroke-width: 2;
 }
 
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:-order-1 {
     order: -1;
@@ -1248,8 +1292,8 @@ button {
     grid-column: span 9 / span 9;
   }
 
-  .lg\:h-70v {
-    height: 70vh;
+  .lg\:h-65v {
+    height: 65vh;
   }
 
   .lg\:items-start {

@@ -11,7 +11,24 @@
 </head>
 <body class="bg-backgroud-color">
     <header>
-        <nav class="w-full">
+        <nav class="w-full flex flex-col md:hidden" id="m-nav">
+            <div class="container flex justify-between my-0 mx-auto py-8 px-4 nav-wrapper">
+                <a href="../src/index.html"><div class="logo">COMPANY NAME</div></a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars block"></i>
+                    <i class="fa-solid fa-xmark absolute invisible"></i>
+                </div>
+            </div>
+            <div class="hidden relative" id="m-nav-list">
+                <ul class="absolute flex flex-col items-end w-full right-0 z-10 px-10 bg-primary--color" >
+                    <li><a class="py-6" href="../src/find-help.html">Find Help</a></li>
+                    <li><a class="py-6" href="../src/resource.html">Find Resources</a></li>
+                    <li><a class="py-6" href="../src/help-us.html">Help Us</a></li>
+                    <li><a class="py-6" href="../src/chat.html">Virtual Support</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="w-full hidden md:block" id="d-nav">
             <div class="container flex justify-between my-0 mx-auto py-8 px-4 nav-wrapper">
                 <a href="../src/index.html"><div class="logo">COMPANY NAME</div></a>
                 <ul class="w-400 flex">
@@ -338,5 +355,6 @@
     </footer>
     <script src="../js/masonry.pkgd.min.js"></script>
     <script src="../js/myscripts.js"></script>
+    <script src="/js/hamburger.js"></script>
 </body>
 </html>

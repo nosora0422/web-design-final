@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 
-:root{
+/* :root{
     --global-font:'Raleway', sans-serif;
     --font-color: #676767;
     --body-font-color: #242424;
     --primary--color:#EFEADF;
     --secondary-color: rgba(203,194,184,0.8);
     --backgroud-color:#F7F5F1;
-}
+} */
 
 *{
     margin: 0;
@@ -227,7 +227,6 @@ h2{
 /*help-us*/
 
 .help-item1{
-
     background-color: rgba(180, 189, 178, 0.8);
 }
 

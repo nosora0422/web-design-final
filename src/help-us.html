@@ -5,12 +5,30 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://kit.fontawesome.com/1a72bf9d1c.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help Us</title>
 </head>
 <body class="bg-backgroud-color">
     <header>
-        <nav class="w-full">
+        <nav class="w-full flex flex-col md:hidden" id="m-nav">
+            <div class="container flex justify-between my-0 mx-auto py-8 px-4 nav-wrapper">
+                <a href="../src/index.html"><div class="logo">COMPANY NAME</div></a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars block"></i>
+                    <i class="fa-solid fa-xmark absolute invisible"></i>
+                </div>
+            </div>
+            <div class="hidden relative" id="m-nav-list">
+                <ul class="absolute flex flex-col items-end w-full right-0 z-10 px-10 bg-primary--color" >
+                    <li><a class="py-6" href="../src/find-help.html">Find Help</a></li>
+                    <li><a class="py-6" href="../src/resource.html">Find Resources</a></li>
+                    <li><a class="py-6" href="../src/help-us.html">Help Us</a></li>
+                    <li><a class="py-6" href="../src/chat.html">Virtual Support</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="w-full hidden md:block" id="d-nav">
             <div class="container flex justify-between my-0 mx-auto py-8 px-4 nav-wrapper">
                 <a href="../src/index.html"><div class="logo">COMPANY NAME</div></a>
                 <ul class="w-400 flex">
@@ -28,7 +46,7 @@
             <h1 class="text-white">Join hands, change lives: Volunteer with purpose</h1>
         </div>
         <div class="grid help-item-box">
-            <div class="col-12 col-4-lg my-6 p-6 rounded-xl help-item1">
+            <div class="col-12 col-4-lg my-6 p-6 rounded-xl bg-green-card">
                 <div class="card-content">
                     <h2>Lorem ipsum dolor sit</h2>
                     <p class="content-detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, alias, laboriosam vero consequuntur voluptatem corporis maiores recusandae eum, sit magni eligendi ipsa excepturi? Dolores ipsa officia cupiditate, necessitatibus unde fuga!</p>
@@ -36,14 +54,14 @@
                 </div>
             </div>
 
-            <div class="col-12 col-4-lg my-6 p-6 rounded-xl help-item2">
+            <div class="col-12 col-4-lg my-6 p-6 rounded-xl bg-primary--color">
                 <div class="card-content">
                     <h2>Lorem ipsum dolor sit</h2>
                     <p class="content-detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, alias, laboriosam vero consequuntur voluptatem corporis maiores recusandae eum, sit magni eligendi ipsa excepturi? Dolores ipsa officia cupiditate, necessitatibus unde fuga!</p>
                     <a href="#" class="inline-block py-2 px-4 mt-5 border border-solid rounded-full -border--font-color">Learn More</a>
                 </div>
             </div>
-            <div class="col-12 col-4-lg my-6 p-6 rounded-xl help-item3">
+            <div class="col-12 col-4-lg my-6 p-6 rounded-xl bg-secondary-color">
                 <div class="card-content">
                     <h2>Lorem ipsum dolor sit</h2>
                     <p class="content-detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, alias, laboriosam vero consequuntur voluptatem corporis maiores recusandae eum, sit magni eligendi ipsa excepturi? Dolores ipsa officia cupiditate, necessitatibus unde fuga!</p>
@@ -77,5 +95,6 @@
             </div>
         </div>
     </footer>
+    <script src="/js/hamburger.js"></script>
 </body>
 </html>
